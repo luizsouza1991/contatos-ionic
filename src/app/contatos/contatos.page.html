@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><b>My contacts</b></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let contato of contatos">
+      <ion-label (click)="showModal(contato)">{{ contato.nome }}</ion-label>
+    </ion-item>   
+  </ion-list>
+</ion-content>
